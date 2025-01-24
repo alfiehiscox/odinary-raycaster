@@ -7,7 +7,7 @@ import "core:strconv"
 import "core:strings"
 import rl "vendor:raylib"
 
-WALL_SCALAR :: 1
+WALL_SCALAR :: 2
 
 RaycasterPlayer :: struct {
 	pos: rl.Vector2,

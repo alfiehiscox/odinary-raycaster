@@ -10,5 +10,11 @@ A Wolfenstein3D-like raycaster written in [Odin](https://odin-lang.org/) with
 - [Raycasting](https://lodev.org/cgtutor/raycasting.html)
 - [DDA Algorithm](http://youtube.com/watch?v=NbSee-XM7WA)
 
-## Todo: 
+## Untextured Raycasting
 
+Git Tag: __untexted-raycasting__
+Article: __Ongoing__ 
+
+![]()
+
+### Install & Demo - TODO(alfie)
