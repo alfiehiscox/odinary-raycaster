@@ -16,6 +16,6 @@ Git Tag: __untexted-raycasting__
 
 Article: [Not Here Yet!]():
 
-![raycasting demo]https://github.com/alfiehiscox/odinary-raycaster/blob/main/demo-untextured.gif)
+![raycasting demo](https://github.com/alfiehiscox/odinary-raycaster/blob/main/demo-untextured.gif)
 
 ### Install & Demo - TODO(alfie)
