@@ -10,20 +10,11 @@ import "core:strconv"
 import "core:strings"
 import rl "vendor:raylib"
 
-GRID :: 24
-CELL :: 30
+GRID :: 48
+CELL :: 15
 
-WINDOW_WIDTH :: GRID * CELL
-WINDOW_HEIGHT :: GRID * CELL
-
-DIR_MAG :: 40
-PLANE_MAG :: 30
-
-Side :: enum {
-	None,
-	XSide,
-	YSide,
-}
+WINDOW_WIDTH :: GRID * CELL // 720
+WINDOW_HEIGHT :: GRID * CELL // 720
 
 main :: proc() {
 	default := context.allocator
@@ -34,24 +25,24 @@ main :: proc() {
 	defer print_memory_usage(&tracking_allocator)
 
 	raycaster: Raycaster
-	init_raycaster(&raycaster, "map.txt", GRID, GRID, CELL, CELL)
+	init_raycaster(&raycaster, "map2.txt", GRID, GRID, CELL, CELL)
 	defer delete_raycaster(&raycaster)
 
 	rl.InitWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "odinary raycaster")
 	defer rl.CloseWindow()
 	rl.SetTargetFPS(60)
 
-	draw(&raycaster)
-
 	for !rl.WindowShouldClose() {
 		delta := rl.GetFrameTime()
+
+		update(&raycaster, delta)
 
 		rl.BeginDrawing()
 
 		rl.ClearBackground(rl.BLACK)
 		rl.DrawFPS(50, 50)
 
-		// draw(&raycaster)
+		draw(&raycaster)
 
 		rl.EndDrawing()
 	}
