@@ -13,8 +13,9 @@ A Wolfenstein3D-like raycaster written in [Odin](https://odin-lang.org/) with
 ## Untextured Raycasting
 
 Git Tag: __untexted-raycasting__
-Article: __Ongoing__ 
 
-![]()
+Article: [Not Here Yet!]():
+
+![raycasting demo]https://github.com/alfiehiscox/odinary-raycaster/blob/main/demo-untextured.gif)
 
 ### Install & Demo - TODO(alfie)
